@@ -36,6 +36,8 @@ object HttpsGithubComMlnstwExampleTeamcityZhukov : BuildType({
     name = "https://github.com/mlnstw/example-teamcity-zhukov"
     description = "example-teamcity-zhukov"
 
+    artifactRules = "target/*.jar => plaindoll.jar"
+
     vcs {
         root(DslContext.settingsRoot)
     }
